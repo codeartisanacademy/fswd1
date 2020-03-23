@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        #container{
+            width:800px;
+            padding: 20px;
+            overflow:auto;
+        }
+        #main{
+            width:440px;
+            padding: 20px;
+            float: left;
+            border-right: solid 1px #cecece;
+        }
+        #side{
+            width:260px;
+            padding: 20px;
+            float: left;
+        }
+        #footer{
+            clear: both;
+        }
+        #container{
+            margin:0px auto;
+        }
+        #rounded{
+            width: 200px;
+            height: 200px;
+            background-color: bisque;
+            border-radius: 50%;
+            box-shadow: 4px 4px 5px lightgray;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="main">
+            <h1>Han Ong on the Language of Tennis</h1>
+            <p>Last question first: the people who know me are laughing at the suggestion that I could be a tennis player—I am such a klutz! However, I have been tennis-crazy ever since I was a child, in Manila. Don’t ask where it came from, as no one from my family or my cohort even remotely cared about tennis. Also, the Philippines is a golf and basketball country. But tennis—forget about it.</p>
+        </div>
+        <div id="side">
+            <ul>
+                <li><a href="#">Dr. Fauci Reports That Alcohol May Help People Survive </a></li>
+                <li><a href="#">Keeping the Coronavirus from Infecting Health-Care Workers</a></li>
+            </ul>
+        </div>
+        <div id="footer">
+            <h4>This is footer</h4>
+        </div>
+    </div>
+    
+    <div id="rounded">
+    </div>
+</body>
+</html>
