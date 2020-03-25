@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        label{
+            display: block;
+            margin: 10px 0;
+        }
+        input[type=text], input[type=email], input[type=number], input[type=password], textarea, select{
+            width: 300px;
+            height: 20px;
+        }
+        select[multiple]{
+            height:100px
+        }
+        textarea{
+            height: 200px;
+        }
+    </style>
+</head>
+<body>
+    <form action="forms.html" method="GET">
+        <div>
+            <label for="id_username">Username</label>
+            <input type="text" name="username" id="id_username" placeholder="enter your username">
+        </div>  
+        <div>
+            <label for="id_email">Email</label>
+            <input type="email" name="email" id="id_email" placeholder="enter your email">
+        </div>
+        <div>
+            <label for="id_password">Password</label>
+            <input type="password" name="password" id="id_password" placeholder="enter your password">
+        </div>
+        <div>
+            <label for="id_photo">Photo</label>
+            <input type="file">
+        </div>
+        <div>
+            <label>Gender</label>
+            <input type="radio" name="gender" value="f"> F 
+            <input type="radio" name="gender" value="m"> M
+        </div>
+        <div>
+            <label>Programming language</label>
+            <input type="checkbox" name="language" value="p"> Python
+            <input type="checkbox" name="language" value="c#"> C#
+            <input type="checkbox" name="language" value="r"> R 
+            <input type="checkbox" name="language" value="g"> Go
+        </div>
+        <div>
+            <label for="id_age">Age</label>
+            <input type="number" name="age" id="id_age" placeholder="enter your age">
+        </div>
+        <div>
+            <label for="id_location">City</label>
+            <select name="location">
+                <option value="">Select your location</option>
+                <option value="sby">Surabaya</option>
+                <option value="jkt">Jakarta</option>
+            </select>
+        </div>
+        <div>
+            <label for="id_hobbies">Hobbies</label>
+            <select name="hobbies" multiple>
+                <option value="soccer">Soccer</option>
+                <option value="gaming">Gaming</option>
+                <option value="coding">Coding</option>
+            </select>
+        </div>
+        <div>
+            <label for="id_comment">Comment</label>
+            <textarea id="id_comment" name="comment"></textarea>
+        </div>
+        <div>
+            <button type="submit">Send</button>
+            <button type="reset">Reset</button>
+        </div>
+    </form>
+</body>
+</html>
+
+

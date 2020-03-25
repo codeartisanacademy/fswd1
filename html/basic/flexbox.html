@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            padding: 10px;
+            background-color: beige;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+        }
+        .box{
+            background-color: red;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 10px;
+        }
+        #main{
+            flex-grow:4;
+        }
+        #side{
+            flex-grow:1;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <div id="main" class="box">
+            <h1>2</h1>
+        </div>
+        <div id="side" class="box">
+            <h1>3</h1>
+        </div>
+        
+    </div>
+</body>
+</html>
