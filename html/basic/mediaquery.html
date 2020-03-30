@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @media screen {
+            body{
+                background-color: aqua;
+            }
+            #header{
+                text-align: center;
+            }
+            #header ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            #header li{
+                display: inline;
+                font-size: 20px;
+                margin-right: 20px;
+            }
+        }
+
+        
+        @media screen and (max-width: 375px){
+            body{
+                background-color: black;
+                color:white;
+            }
+            #header ul{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            #header li{
+                display: block;
+                font-size: 20px;
+                margin-right: 20px;
+                background-color:yellow;
+            }
+        }
+
+        @media print{
+            #header{
+                display: none;
+            }
+            #content{
+                width:70%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+            <li><a href="">Service</a></li>
+            <li><a href="">Contact</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>China’s Struggles with Hospice Care</h1>
+        <p>Mu Zhixia discovered the lump in her left breast on an unseasonably warm night in March of 2014. At twenty-seven, she was strong and healthy, and hadn’t seen a doctor since giving birth to her son, Xuan, two years before. But her mother, Sulin, told her not to take chances and marched her to their local hospital, in Pingding, a small city in the province of Shanxi. A doctor conducted a swift examination and wrote a prescription. “Doesn’t she need a scan?” Sulin asked. “No need!” the doctor responded. “The medication will be enough.”
+
+        </p>
+        <p>Zhixia dutifully took the pills, but after a few months the lump was still there, so Sulin accompanied her to a hospital in Yangquan, a nearby industrial city of 1.5 million people. The doctors said that she needed immediate surgery. As is typical with dire diagnoses in China, they did not tell Zhixia that she had breast cancer, informing only her mother. Sulin, in turn, assured her daughter that the growth was benign.
+
+        </p>
+    </div>
+</body>
+</html>
